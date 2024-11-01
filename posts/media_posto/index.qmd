@@ -1,0 +1,35 @@
+---
+title: "Qual a região do Brasil com o preço médio de venda da gasolina mais alto no ano de 2010?"
+author: "Bruno Saraiva"
+date: "2024-11-01"
+categories: [Análise, Código]
+image: "image.jpg"
+---
+```{r, include=FALSE}
+library(tidyverse)
+library(readr)
+```
+
+Neste post iremos descubrar qual região do Brasil vendeu a gasolina mais cara no ano de 2010. Para isto, iremos analisar a base de dados fonecida pela ANP.
+
+# Primeiro passo: encontrar a média por região
+
+Vamos encontar a média por região usando as funções `group_by()` e `summarise()`, em seguida, criar um gráfico utilizando a função `ggplot()`
+
+```{r, echo=FALSE}
+
+postos <- readRDS('~/R/Postos no ano de 2010/posts/media_posto/postosgasolina.rds')
+
+media_por_regiao <- postos %>%
+  group_by(`Regiao - Sigla`) %>%
+  summarise(media_preco = mean(`Valor de Venda`, na.rm = TRUE))
+
+ggplot(media_por_regiao, aes(x = `Regiao - Sigla`, y = media_preco)) +
+  geom_bar(stat = "identity", fill = "blue4") + # Gráfico de barras para as médias por município
+  labs(title = "Média do Preço da Gasolina por região do Brasil 2010 ",
+       x = "Região",
+       y = "Média do Preço (R$)") +
+  theme_minimal()
+```
+# RESULTADO
+Como podemos ver no gráfico acima, a região Norte foi a região com a gasolina mais cara do Brasil, chegando próximo de R$ 2,50.

@@ -1,0 +1,15 @@
+{
+  "hash": "7d483ec5eca512eab1f621f514fa1b9d",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Qual a região do Brasil com o preço médio de venda da gasolina mais alto no ano de 2010?\"\nauthor: \"Bruno Saraiva\"\ndate: \"2024-11_01\"\ncategories: [Análise, Código]\n---\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(tidyverse)\n```\n\n::: {.cell-output .cell-output-stderr}\n\n```\nWarning: package 'tidyverse' was built under R version 4.4.1\n```\n\n\n:::\n\n::: {.cell-output .cell-output-stderr}\n\n```\nWarning: package 'tibble' was built under R version 4.4.1\n```\n\n\n:::\n\n::: {.cell-output .cell-output-stderr}\n\n```\nWarning: package 'tidyr' was built under R version 4.4.1\n```\n\n\n:::\n\n::: {.cell-output .cell-output-stderr}\n\n```\nWarning: package 'readr' was built under R version 4.4.1\n```\n\n\n:::\n\n::: {.cell-output .cell-output-stderr}\n\n```\nWarning: package 'purrr' was built under R version 4.4.1\n```\n\n\n:::\n\n::: {.cell-output .cell-output-stderr}\n\n```\nWarning: package 'dplyr' was built under R version 4.4.1\n```\n\n\n:::\n\n::: {.cell-output .cell-output-stderr}\n\n```\nWarning: package 'stringr' was built under R version 4.4.1\n```\n\n\n:::\n\n::: {.cell-output .cell-output-stderr}\n\n```\nWarning: package 'forcats' was built under R version 4.4.1\n```\n\n\n:::\n\n::: {.cell-output .cell-output-stderr}\n\n```\nWarning: package 'lubridate' was built under R version 4.4.1\n```\n\n\n:::\n\n::: {.cell-output .cell-output-stderr}\n\n```\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4          ✔ readr     2.1.5     \n✔ forcats   1.0.0          ✔ stringr   1.5.1     \n✔ ggplot2   3.5.1.9000     ✔ tibble    3.2.1     \n✔ lubridate 1.9.3          ✔ tidyr     1.3.1     \n✔ purrr     1.0.2          \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors\n```\n\n\n:::\n\n```{.r .cell-code}\nlibrary(palmerpenguins)\n```\n\n::: {.cell-output .cell-output-stderr}\n\n```\nWarning: package 'palmerpenguins' was built under R version 4.3.3\n```\n\n\n:::\n:::\n\n\n# Bem-vindo ao meu blog!\n\nNeste post iremos descubrar qual região do brasil vendeu possuia a gasolina mais cara no ano de 2010.\n\n\\`\\`\\`{r} \\# Código R plot(cars)\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "posts/media_posto/index.html",
+    "href": "posts/media_posto/index.html",
+    "title": "Qual a região do Brasil com o preço médio de venda da gasolina mais alto no ano de 2010?",
+    "section": "",
+    "text": "Neste post iremos descubrar qual região do Brasil vendeu a gasolina mais cara no ano de 2010. Para isto, iremos analisar a base de dados fonecida pela ANP.\n\nPrimeiro passo: encontrar a média por região\nVamos encontar a média por região usando as funções group_by() e summarise(), em seguida, criar um gráfico utilizando a função ggplot()\n\n\n\n\n\n\n\n\n\n\n\nRESULTADO\nComo podemos ver no gráfico acima, a região Norte foi a região com a gasolina mais cara do Brasil, chegando próximo de R$ 2,50."
+  },
+  {
+    "objectID": "hello.html",
+    "href": "hello.html",
+    "title": "Hello, Quarto",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "hello.html#meet-quarto",
+    "href": "hello.html#meet-quarto",
+    "title": "Hello, Quarto",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "hello.html#meet-the-penguins",
+    "href": "hello.html#meet-the-penguins",
+    "title": "Hello, Quarto",
+    "section": "Meet the penguins",
+    "text": "Meet the penguins\n\nThe penguins data from the palmerpenguins package contains size measurements for 344 penguins from three species observed on three islands in the Palmer Archipelago, Antarctica.\nThe plot below shows the relationship between flipper and bill lengths of these penguins."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Postos no ano de 2010",
+    "section": "",
+    "text": "Qual a região do Brasil com o preço médio de venda da gasolina mais alto no ano de 2010?\n\n\n\n\n\n\nAnálise\n\n\nCódigo\n\n\n\n\n\n\n\n\n\nNov 1, 2024\n\n\nBruno Saraiva\n\n\n\n\n\n\nNo matching items"
+  }
+]
