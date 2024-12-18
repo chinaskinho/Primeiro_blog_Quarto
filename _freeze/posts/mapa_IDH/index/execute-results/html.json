@@ -1,0 +1,17 @@
+{
+  "hash": "01e1c3f9f47f2089400b70d16ea22911",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"IDH por Estado do Brasil em 2021\"\nauthor: \"Bruno Saraiva\"\ndate: \"2024-11-16\"\ncategories: [Análise, Código]\nimage: \"image.jpg\"\n---\n\n\n\n\n\nNeste post poderemos encontrar o IDH por Estado através de um mapa gerado a partir dos dados Atlas do Desenvolvimento Humano no Brasil.\n\n\n\n\n::: {.cell}\n::: {.cell-output .cell-output-stderr}\n\n```\nUsing year/date 2020\n```\n\n\n:::\n\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,55 @@
+---
+title: "IDH por Estado do Brasil em 2021"
+author: "Bruno Saraiva"
+date: "2024-11-16"
+categories: [Análise, Código]
+image: "image.jpg"
+---
+
+```{r, include=FALSE}
+library(geobr)
+library(ggplot2)
+library(dplyr)
+```
+
+Neste post poderemos encontrar o IDH por Estado através de um mapa gerado a partir dos dados Atlas do Desenvolvimento Humano no Brasil.
+
+
+```{r, echo=FALSE}
+
+# Dados do IDH por estado (dados de 2021, último censo com IDH disponível)
+idh_estados <- data.frame(
+  sigla_uf = c("AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", 
+               "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", 
+               "SP", "SE", "TO"),
+  idh = c(0.710, 0.688, 0.688, 0.700, 0.691, 0.734, 0.824, 0.771, 0.737, 0.676, 0.736,
+          0.742, 0.774, 0.690, 0.698, 0.769, 0.719, 0.690, 0.762, 0.728, 0.771, 0.700,
+          0.699, 0.792, 0.806, 0.702 , 0.731)
+)
+
+# Obtendo os dados espaciais dos estados
+ estados <- read_state(year = 2020)
+  
+
+# Juntando os dados do IDH com os dados de IDH
+estados_idh <- estados %>%
+  left_join(idh_estados, by = c("abbrev_state" = "sigla_uf"))
+
+# Criando o mapa
+ggplot() +
+  geom_sf(data = estados_idh, aes(fill = idh), color = "white", size = 0.2) +
+  scale_fill_viridis_c(option = "viridis",
+                       name = "IDH",
+                       limits = c(0.6, 0.85)) +
+  theme_minimal() +
+  labs(title = "Índice de Desenvolvimento Humano (IDH) por Estado",
+       subtitle = "Dados do último censo (2021)",
+       caption = "Fonte: Atlas do Desenvolvimento Humano no Brasil") +
+  theme(
+    plot.title = element_text(size = 16, face = "bold"),
+    plot.subtitle = element_text(size = 12),
+    legend.position = "right"
+  )
+```
+
+

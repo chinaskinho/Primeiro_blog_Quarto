@@ -7,6 +7,13 @@
     "text": "Neste post iremos descubrar qual região do Brasil vendeu a gasolina mais cara no ano de 2010. Para isto, iremos analisar a base de dados fonecida pela ANP.\n\nPrimeiro passo: encontrar a média por região\nVamos encontar a média por região usando as funções group_by() e summarise(), em seguida, criar um gráfico utilizando a função ggplot()\n\n\n\n\n\n\n\n\n\n\n\nRESULTADO\nComo podemos ver no gráfico acima, a região Norte foi a região com a gasolina mais cara do Brasil, chegando próximo de R$ 2,50."
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Postos no ano de 2010",
+    "section": "",
+    "text": "IDH por Estado do Brasil em 2021\n\n\n\n\n\n\nAnálise\n\n\nCódigo\n\n\n\n\n\n\n\n\n\nNov 16, 2024\n\n\nBruno Saraiva\n\n\n\n\n\n\n\n\n\n\n\n\nQual a região do Brasil com o preço médio de venda da gasolina mais alto no ano de 2010?\n\n\n\n\n\n\nAnálise\n\n\nCódigo\n\n\n\n\n\n\n\n\n\nNov 1, 2024\n\n\nBruno Saraiva\n\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -14,10 +21,10 @@
     "text": "About this blog"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Postos no ano de 2010",
+    "objectID": "posts/mapa_IDH/index.html",
+    "href": "posts/mapa_IDH/index.html",
+    "title": "IDH por Estado do Brasil em 2021",
     "section": "",
-    "text": "Qual a região do Brasil com o preço médio de venda da gasolina mais alto no ano de 2010?\n\n\n\n\n\n\nAnálise\n\n\nCódigo\n\n\n\n\n\n\n\n\n\nNov 1, 2024\n\n\nBruno Saraiva\n\n\n\n\n\n\nNo matching items"
+    "text": "Neste post poderemos encontrar o IDH por Estado através de um mapa gerado a partir dos dados Atlas do Desenvolvimento Humano no Brasil.\n\n\nUsing year/date 2020"
   }
 ]
